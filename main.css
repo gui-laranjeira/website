@@ -1,0 +1,104 @@
+@import url(https://fonts.googleapis.com/css2?family=Noto+Sans+Mono&display=swap);
+
+:root {
+    --base: #24273a;
+    --text: #cad3f5;
+    --subtext: #b8c0e0;
+    --maroon: #ea999c;
+    --peach: #f5a97f;
+    --yellow: #eed49f;
+    --rosewater: #f4dbd6;
+    --mauve: #c6a0f6;
+    --green: #a6da95;
+    --blue: #8aadf4;
+}
+
+*{
+    background-color: var(--base);
+    color: var(--text);
+    font-family: 'Noto Sans Mono', monospace;
+    margin-left: 0.5rem;
+    margin-top: 0.7rem;
+}
+
+p{
+    font-size: larger;
+}
+
+h2{
+    color:var(--blue);
+    font-size:x-large;
+}
+    
+section > p {
+    text-align: left;
+    width:45%;
+}
+
+footer{
+    color: var(--text);
+    font-size: larger;
+    position: fixed;
+    bottom: 0;
+    margin-bottom:2rem;
+}
+.top{
+    font-size: xx-large;
+}
+
+.top > h1 {
+    color: var(--blue);
+}
+.links{
+    text-decoration: none;
+    color: var(--peach);
+    font-size: larger;
+}
+
+.interests{
+    color: var(--green);
+    font-size: larger;
+}
+
+.tech{
+    color: var(--green);
+}
+
+.social {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style-type: none;
+    padding: 0;
+    width:45%;
+    margin-top:1rem; 
+}
+
+.social-list {
+    display: inline-block;
+    margin-right:100px;
+}
+
+.modal {
+    display:flex;
+    text-align: center;
+    background-color: var(--subtext);
+    position: fixed;
+    height: 5rem;
+    width:20rem;
+    top: 48%;
+    left: 48%;
+    transform: translate(-50%, -50%);
+    z-index: 50;
+    border-radius: 10px;
+    display: none;
+}
+
+.modal > p {
+    background-color: var(--subtext);
+    color: var(--base);
+}
+
+.show {
+    display: block;
+}

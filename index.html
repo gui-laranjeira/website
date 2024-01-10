@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>laranjeira.dev</title>
+    <link rel="stylesheet" href="./main.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto+Sans+Mono">
+</head>
+<body style="height:90vh">
+    <section class="top">
+        <h1>
+            LARANJEIRA.DEV
+        </h1>
+    </section>
+    <section class="who">
+        <h2>Who am I</h2>
+        <p>
+            Hi! I'm<span style="color: var(--green)">Guilherme Laranjeira</span>, a 24 years old software developer 
+            living in São Paulo that loves to develop with Go. I'm starting in the open source community and I'm looking 
+            for new projects to  contribute and build! 
+        </p>
+        <p>
+            I have over a year of experience working with software development and during that time I've built softwares using
+            <span class="tech">Go, .NET, Typescript, Angular, Vue, Ionic, Azure, Docker </span>, etc. Currently I'm a junior 
+            software engineer at Sinqia, forming a team that offers innovative solutions for the pension market, developing 
+            web services, APIs, mobile and web applications for the sector. Reach me out:
+        </p>
+        <ul class="social">
+            <li class="social-list">
+                <a class="links" alt="github" href="https://github.com/gui-laranjeira" target="_blank">Github</a>
+            </li>
+            <li class="social-list">
+                <a class="links" alt="linkedin" href="https://www.linkedin.com/in/guilherme-laranjeira-rodrigues/" target="_blank">Linkedin</a>
+            </li class="social-list">
+            <li>
+                <a class="links mail" onclick="copyToClipboard('gui.laranjeira1@gmail.com')">Email</a>
+            </li>
+        </ul>
+    </section>
+    <br>
+    <section class="interest">
+        <h2>Interests</h2>
+        <ul>
+            <li><a class="interests">Software architecture</a></li>
+            <li> <a class="interests">Backend development</a></li>
+            <li><a class="interests">Cyber security</a></li>
+            <li><a class="interests">Devops</a></li>
+            <li><a class="interests">Linux</a></li>
+        </ul>
+    </section>
+    <div id="myModal" class="modal">
+         <p>Email copied to the clipboard!</p>
+    </div>
+    <footer>
+        <span>This website were inspired in<a href="https://datatracker.ietf.org/doc/">datatracker</a> and<a alt="catppuccinn" href="https://github.com/catppuccin" target="_blank">Catppuccin theme</a>.</span><br>
+        <span>You can check the source code<a alt="website repo" href="https://github.com/gui-laranjeira/website" target="_blank">here</a>.</span>
+    </footer>
+    <script>
+        const copyToClipboard = async (text) => {
+            const delay = ms => new Promise(res => setTimeout(res, ms));
+            const el = document.createElement('textarea');
+            el.value = text;
+            document.body.appendChild(el);
+            el.select();
+            document.execCommand('copy');
+            document.body.removeChild(el);  
+            showModal();
+            await delay(1000);   
+            hideModal();
+        }
+
+        function showModal(){
+            const modal = document.getElementById('myModal');
+            modal.classList.add('show');
+        }
+
+        function hideModal(){
+            const modal = document.getElementById('myModal');
+            modal.classList.remove('show');
+        }
+    </script>
+        
+</body>
+</html>
