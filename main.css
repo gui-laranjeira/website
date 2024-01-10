@@ -55,6 +55,10 @@ footer{
     font-size: larger;
 }
 
+.mail:hover{
+    cursor:pointer;
+
+}
 .interests{
     color: var(--green);
     font-size: larger;
