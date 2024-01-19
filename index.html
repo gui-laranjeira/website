@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="./main.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto+Sans+Mono">
 </head>
-<body style="height:90vh">
+<body class="container">
     <section class="top">
         <h1>
             LARANJEIRA.DEV
@@ -52,6 +52,7 @@
     <div id="myModal" class="modal">
          <p>Email copied to the clipboard!</p>
     </div>
+    <br>
     <footer>
         <span>This website was inspired by<a href="https://datatracker.ietf.org/doc/">datatracker</a> and<a alt="catppuccinn" href="https://github.com/catppuccin" target="_blank">Catppuccin theme</a>.</span><br>
         <span>You can check the source code<a alt="website repo" href="https://github.com/gui-laranjeira/website" target="_blank">here</a>.</span>
@@ -59,12 +60,13 @@
     <script>
         const copyToClipboard = async (text) => {
             const delay = ms => new Promise(res => setTimeout(res, ms));
-            const el = document.createElement('textarea');
-            el.value = text;
+            
+            const element = document.createElement('textarea');
+            element.value = text;
             document.body.appendChild(el);
-            el.select();
+            element.select();
             document.execCommand('copy');
-            document.body.removeChild(el);  
+            document.body.removeChild(element);  
             showModal();
             await delay(1000);   
             hideModal();
