@@ -17,12 +17,12 @@
         <h2>Who am I</h2>
         <p>
             Hi! I'm<span style="color: var(--green)">Guilherme Laranjeira</span>, a 24 years old software developer 
-            living in São Paulo that loves to develop with Go. I'm starting in the open source community and I'm looking 
+            living in São Paulo that builds mainly with Go. I'm just starting in the open source community and I'm looking 
             for new projects to  contribute and build! 
         </p>
         <p>
             I have over a year of experience working with software development and during that time I've built softwares using
-            <span class="tech">Go, .NET, Typescript, Angular, Vue, Ionic, Azure, Docker </span>, etc. Currently I'm a junior 
+            <span class="tech">Go, .NET, Typescript, Angular, Vue, Ionic, Azure, Docker</span>, etc. Currently I'm a junior 
             software engineer at Sinqia, forming a team that offers innovative solutions for the pension market, developing 
             web services, APIs, mobile and web applications for the sector. Reach me out:
         </p>
@@ -63,10 +63,12 @@
             
             const element = document.createElement('textarea');
             element.value = text;
-            document.body.appendChild(el);
+            document.body.appendChild(element);
+
             element.select();
             document.execCommand('copy');
             document.body.removeChild(element);  
+            
             showModal();
             await delay(1000);   
             hideModal();
