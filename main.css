@@ -21,7 +21,7 @@
     margin-top: 0.5rem;
 }
 
-@media screen and (max-width: 1300px) {
+@media screen and (max-width: 1400px) {
     *{
         margin-left: 0.5rem;
         margin-top: 0.5rem;
@@ -74,7 +74,7 @@
     }
 }
 
-@media screen and (min-width: 1301px) {
+@media screen and (min-width: 1401px) {
     p{
         font-size: larger;
     }
