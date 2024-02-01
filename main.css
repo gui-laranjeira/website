@@ -18,13 +18,13 @@
     color: var(--text);
     font-family: 'Noto Sans Mono', monospace;
     margin-left: 0.5rem;
-    margin-top: 0.7rem;
+    margin-top: 0.5rem;
 }
 
 @media screen and (max-width: 1300px) {
     *{
         margin-left: 0.5rem;
-        margin-top: 0.6rem;
+        margin-top: 0.5rem;
     }
     p{
         font-size: small;
@@ -37,33 +37,40 @@
         
     section > p {
         text-align: left;
-        width:50%;
+        width:52%;
     }
     
     footer{
         font-size: small;
         bottom: 0;
-        max-width: 50%;
+        max-width: 52%;
         margin-bottom:2rem;
     }
     .top{
-        font-size: x-large;
+        font-size: larger;
+    }
+    .who{
+        margin-top: -1rem;
     }
     .links{
         font-size: medium;
     }
+    .interest{
+        margin-bottom: 1rem;
+        padding: 0;
+    }
     .interests{
         font-size: small;
-    }
-    .interest{
-        margin-bottom: 2rem;
+        display: inline;
+        list-style: none;    
     }
     .modal {
-        top: 50%;
-        left: 52%;
+        top: 44%;
+        left: 48%;
+        height: 2.5rem;
     }
     .social {
-        margin-bottom: 2rem;
+        margin-bottom: 1rem;
     }
 }
 
@@ -103,6 +110,8 @@
     .modal {
         top: 48%;
         left: 48%;
+        height: 5rem;
+        width:20rem;
     }
     .interest{
         margin-bottom: 3rem;
@@ -157,8 +166,6 @@ footer{
     text-align: center;
     background-color: var(--subtext);
     position: fixed;
-    height: 5rem;
-    width:20rem;
     transform: translate(-50%, -50%);
     z-index: 50;
     border-radius: 10px;
