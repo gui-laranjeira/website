@@ -6,6 +6,7 @@
     <title>laranjeira.dev</title>
     <link rel="stylesheet" href="./main.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto+Sans+Mono">
+    <link rel="icon" type="image/x-icon" href="/assets/icon.png">
 </head>
 <body class="container">
     <section class="top">
@@ -43,7 +44,7 @@
         <h2>Interests</h2>
         <ul>
             <li><a class="interests">Software architecture</a></li>
-            <li> <a class="interests">Backend development</a></li>
+            <li><a class="interests">Backend development</a></li>
             <li><a class="interests">Cyber security</a></li>
             <li><a class="interests">Devops</a></li>
             <li><a class="interests">Linux</a></li>
@@ -57,33 +58,6 @@
         <span>This website was inspired by<a href="https://datatracker.ietf.org/doc/">datatracker</a> and<a alt="catppuccinn" href="https://github.com/catppuccin" target="_blank">Catppuccin theme</a>.</span><br>
         <span>You can check the source code<a alt="website repo" href="https://github.com/gui-laranjeira/website" target="_blank">here</a>.</span>
     </footer>
-    <script>
-        const copyToClipboard = async (text) => {
-            const delay = ms => new Promise(res => setTimeout(res, ms));
-            
-            const element = document.createElement('textarea');
-            element.value = text;
-            document.body.appendChild(element);
-
-            element.select();
-            document.execCommand('copy');
-            document.body.removeChild(element);  
-            
-            showModal();
-            await delay(1000);   
-            hideModal();
-        }
-
-        function showModal(){
-            const modal = document.getElementById('myModal');
-            modal.classList.add('show');
-        }
-
-        function hideModal(){
-            const modal = document.getElementById('myModal');
-            modal.classList.remove('show');
-        }
-    </script>
-        
+    <script type="text/javascript" src="./app.js"></script>
 </body>
 </html>
