@@ -27,7 +27,7 @@
         margin-top: 0.6rem;
     }
     p{
-        font-size: medium;
+        font-size: small;
     }
     
     h2{
@@ -41,7 +41,7 @@
     }
     
     footer{
-        font-size: medium;
+        font-size: small;
         
         bottom: 0;
         margin-bottom:2rem;
@@ -53,10 +53,10 @@
         font-size: medium;
     }
     .interests{
-        font-size: medium;
+        font-size: small;
     }
     .modal {
-        top: 58%;
+        top: 50%;
         left: 52%;
     }
 }
