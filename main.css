@@ -42,8 +42,8 @@
     
     footer{
         font-size: small;
-        
         bottom: 0;
+        max-width: 50%;
         margin-bottom:2rem;
     }
     .top{
@@ -55,15 +55,25 @@
     .interests{
         font-size: small;
     }
+    .interest{
+        margin-bottom: 2rem;
+    }
     .modal {
         top: 50%;
         left: 52%;
+    }
+    .social {
+        margin-bottom: 2rem;
     }
 }
 
 @media screen and (min-width: 1301px) {
     p{
         font-size: larger;
+    }
+    
+    .container{
+        height:90vh;
     }
     
     h2{
@@ -78,7 +88,6 @@
     
     footer{
         font-size: larger;
-        
         bottom: 0;
         margin-bottom:2rem;
     }
@@ -95,6 +104,12 @@
         top: 48%;
         left: 48%;
     }
+    .interest{
+        margin-bottom: 3rem;
+    }
+    .social {
+        margin-bottom: 3rem;
+    }
 }
 
 footer{
@@ -106,17 +121,12 @@ footer{
     color: var(--peach);
 }
 
-.container{
-    height:90vh;
-}
-
 .top > h1 {
     color: var(--blue);
 }
 
 .mail:hover{
     cursor:pointer;
-
 }
 
 .interests{
