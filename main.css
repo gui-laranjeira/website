@@ -50,13 +50,13 @@
         font-size: larger;
     }
     .who{
-        margin-top: -1rem;
+        margin-top: 0;
     }
     .links{
         font-size: medium;
     }
     .interest{
-        margin-bottom: 1rem;
+        margin-bottom: 1.5rem;
         padding: 0;
     }
     .interests{
@@ -65,8 +65,8 @@
         list-style: none;    
     }
     .modal {
-        top: 44%;
-        left: 48%;
+        top: 46%;
+        left: 50%;
         height: 2.5rem;
     }
     .social {
