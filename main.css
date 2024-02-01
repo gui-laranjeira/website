@@ -21,52 +21,106 @@
     margin-top: 0.7rem;
 }
 
-p{
-    font-size: larger;
+@media screen and (max-width: 1300px) {
+    *{
+        margin-left: 0.5rem;
+        margin-top: 0.6rem;
+    }
+    p{
+        font-size: medium;
+    }
+    
+    h2{
+        color:var(--blue);
+        font-size:larger;
+    }
+        
+    section > p {
+        text-align: left;
+        width:50%;
+    }
+    
+    footer{
+        font-size: medium;
+        
+        bottom: 0;
+        margin-bottom:2rem;
+    }
+    .top{
+        font-size: x-large;
+    }
+    .links{
+        font-size: medium;
+    }
+    .interests{
+        font-size: medium;
+    }
+    .modal {
+        top: 58%;
+        left: 52%;
+    }
 }
 
-h2{
-    color:var(--blue);
-    font-size:x-large;
-}
+@media screen and (min-width: 1301px) {
+    p{
+        font-size: larger;
+    }
     
-section > p {
-    text-align: left;
-    width:45%;
+    h2{
+        color:var(--blue);
+        font-size:x-large;
+    }
+        
+    section > p {
+        text-align: left;
+        width:45%;
+    }
+    
+    footer{
+        font-size: larger;
+        
+        bottom: 0;
+        margin-bottom:2rem;
+    }
+    .top{
+        font-size: xx-large;
+    }
+    .links{
+        font-size: larger;
+    }
+    .interests{
+        font-size: larger;
+    }
+    .modal {
+        top: 48%;
+        left: 48%;
+    }
 }
 
 footer{
     color: var(--text);
-    font-size: larger;
-    
-    bottom: 0;
-    margin-bottom:2rem;
+}
+
+.links{
+    text-decoration: none;
+    color: var(--peach);
 }
 
 .container{
     height:90vh;
 }
 
-.top{
-    font-size: xx-large;
-}
-
 .top > h1 {
     color: var(--blue);
-}
-.links{
-    text-decoration: none;
-    color: var(--peach);
-    font-size: larger;
 }
 
 .mail:hover{
     cursor:pointer;
 
 }
+
 .interests{
     color: var(--green);
-    font-size: larger;
 }
 
 .tech{
@@ -95,8 +149,6 @@ footer{
     position: fixed;
     height: 5rem;
     width:20rem;
-    top: 48%;
-    left: 48%;
     transform: translate(-50%, -50%);
     z-index: 50;
     border-radius: 10px;
