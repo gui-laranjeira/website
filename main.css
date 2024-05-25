@@ -146,6 +146,10 @@ footer{
     color: var(--green);
 }
 
+.company {
+    color: var(--peach);
+}
+
 .social {
     display: flex;
     justify-content: center;
